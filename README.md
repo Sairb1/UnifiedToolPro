@@ -76,7 +76,7 @@ Access essential ADB and Fastboot commands through a dedicated GUI console:
 
 ## 🤝 Credits & Support
 
-* **Developer:** [Ayan (@imnotaino)](https://www.google.com/search?q=https://t.me/realme11x)
+* **Developer:** [Ayan ](https://www.instagram.com/@imnotaino)
 * **GitHub:** [sairb1](https://www.google.com/search?q=https://github.com/sairb1)
 * **Community:** Join our [Telegram Channel](https://www.google.com/search?q=https://t.me/realme11x) for updates and support.
 
@@ -88,6 +88,7 @@ Access essential ADB and Fastboot commands through a dedicated GUI console:
 ---
 
 <p align="center">Made with ❤️ for the Realme Community</p>
+
 
 
 
