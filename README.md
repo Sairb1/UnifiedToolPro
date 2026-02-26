@@ -1,12 +1,8 @@
-**Tag:** `v5.3`
-**Title:** `Realme Unified Tool Pro v5.3`
-
 ---
 
 ## Release Description
 
 ```
-REALME UNIFIED TOOL PRO  –  v5.3
 
 A Windows-based Android flashing and utility toolkit designed for Realme and compatible Android devices.
 
@@ -221,3 +217,4 @@ Built With:
 * Python 3
 * CustomTkinter
 * Android Platform Tools
+
