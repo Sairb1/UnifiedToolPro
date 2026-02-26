@@ -1,6 +1,6 @@
 ---
 
-# Realme Unified Tool Pro 🛠️
+# Unified Tool Pro 🛠️
 
 A powerful, modern Windows-based GUI toolkit designed for flashing, repairing, and optimizing Realme and compatible Android devices. Built with **Python** and **CustomTkinter** for a sleek, dark-mode experience.
 
@@ -16,7 +16,7 @@ A powerful, modern Windows-based GUI toolkit designed for flashing, repairing, a
 
 ### 🔥 Advanced Flashing Engine
 
-* **Port ROM and Custom ROM (IMG) Flasher:** Can Flash PORT ROM(By Destination, also Custom Rom with .zip file(adb sideload).
+* **Port ROM and Custom ROM (IMG) Flasher:** Can Flash PORT ROM(By Custom .imgs, also Custom Rom with .zip file.
 * **Dirty vs. Clean Flash:** Choose between keeping data or a fresh start.
 * **ADB Sideload:** Easy `.zip` flashing for Custom ROMs via Recovery (TWRP/OrangeFox).
 * **Boot Image Utility:** One-click `boot.img` flashing for rooting or kernel updates.
@@ -85,4 +85,5 @@ Access essential ADB and Fastboot commands through a dedicated GUI console:
 ---
 
 <p align="center">Made with ❤️ for the Realme Community</p>
+
 
