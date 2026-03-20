@@ -13,6 +13,30 @@ A modern, high-performance Android flashing and repair toolkit for **Realme and 
 
 ---
 
+---
+
+## Installation
+
+## Unified Tool Pro v6.0
+
+### Downloads
+| Platform | File |
+|----------|------|
+| 🪟 Windows | `UnifiedToolPro-Windows.exe` |
+| 🍎 macOS | `UnifiedToolPro-Mac.zip` |
+| 🐧 Linux | `UnifiedToolPro-Linux` |
+
+### Notes
+- Windows: just run the `.exe`
+- macOS: unzip, then right-click → Open (first time only, Gatekeeper bypass)
+- Linux: Rename it UnifiedToolPro then  `chmod +x UnifiedToolPro && ./UnifiedToolPro`
+- ADB must be installed on Mac/Linux if not then 
+Download ADB in Mac/Linux: `sudo apt install google-android-platform-tools-installer`
+
+> **Antivirus warning:** PyInstaller EXEs are sometimes flagged as false positives. If your AV blocks it, add an exclusion or run from source instead.
+
+---
+
 ## ⚡ What’s New?
 
 * Stable flashing engine (Port + Stock)
