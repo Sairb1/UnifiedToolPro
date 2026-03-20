@@ -1,64 +1,81 @@
-# 🛠️ Unified Tool Pro 
+# 🛠️ Unified Tool Pro
 
-A modern, high-performance Android flashing and repair toolkit for **Realme and compatible devices**, built with Python and a refined architecture for stability, speed, and real-world usage.
-
-## Requirements
-
-| Requirement | Details |
-|---|---|
-| OS | Windows 10 / 11 (64-bit), Linux and MacOS |
-| USB Driver | ADB driver installed for your device |
-| Device | USB Debugging enabled (for ADB operations) |
-| Bootloader | Unlocked (for flashing operations) |
+A modern, high-performance Android flashing and repair toolkit for **Realme and compatible devices**, designed for speed, safety, and real-world usage.
 
 ---
 
+## ⚡ Overview
+
+Unified Tool Pro simplifies complex Android operations like flashing, partition management, and diagnostics into a **clean, powerful GUI experience**.
+
+Whether you're flashing a ROM, fixing partitions, or debugging a device — everything is handled in one place.
+
 ---
 
-## Installation
+## 🖥️ Requirements
 
-## Unified Tool Pro v6.0
+| Requirement | Details                                |
+| ----------- | -------------------------------------- |
+| OS          | Windows 10 / 11 (64-bit), Linux, macOS |
+| USB Driver  | ADB driver installed                   |
+| Device      | USB Debugging enabled                  |
+| Bootloader  | Unlocked (for flashing)                |
 
-### Downloads
-| Platform | File |
-|----------|------|
+---
+
+## 📦 Installation
+
+### 🔽 Downloads
+
+| Platform   | File                         |
+| ---------- | ---------------------------- |
 | 🪟 Windows | `UnifiedToolPro-Windows.exe` |
-| 🍎 macOS | `UnifiedToolPro-Mac.zip` |
-| 🐧 Linux | `UnifiedToolPro-Linux` |
-
-### Notes
-- Windows: just run the `.exe`
-- macOS: unzip, then right-click → Open (first time only, Gatekeeper bypass)
-- Linux: Rename it UnifiedToolPro then  `chmod +x UnifiedToolPro && ./UnifiedToolPro`
-- ADB must be installed on Mac/Linux if not then 
-Download ADB in Mac/Linux: `sudo apt install google-android-platform-tools-installer`
-
-> **Antivirus warning:** PyInstaller EXEs are sometimes flagged as false positives. If your AV blocks it, add an exclusion or run from source instead.
+| 🍎 macOS   | `UnifiedToolPro-Mac.zip`     |
+| 🐧 Linux   | `UnifiedToolPro-Linux`       |
 
 ---
 
-## ⚡ What’s New?
+### ⚙️ Setup
+
+* **Windows:** Run `.exe` (no install needed)
+
+* **macOS:** Unzip → Right-click → Open (first launch)
+
+* **Linux:**
+
+  ```bash
+  chmod +x UnifiedToolPro
+  ./UnifiedToolPro
+  ```
+
+* Install ADB (Mac/Linux):
+
+  ```bash
+  sudo apt install google-android-platform-tools-installer
+  ```
+
+> ⚠️ PyInstaller builds may trigger false antivirus flags. Add exclusion if needed.
+
+---
+
+## 🚀 What’s New (v6.0)
 
 * Stable flashing engine (Port + Stock)
 * Fixed ADB/Fastboot reboot system
 * Improved payload dumper reliability
-* Cleaner UI with better interaction
+* Cleaner UI and better interaction
 * Reduced lag, flicker, and UI glitches
-
-<img width="1439" height="854" alt="image" src="https://github.com/user-attachments/assets/b3a595a0-5720-4215-a9ec-86427dfd290c" />
-<img width="1439" height="848" alt="image" src="https://github.com/user-attachments/assets/6cbd9b24-98bd-4ffe-b96f-f86e74acdf50" />
-
-
-
 
 ---
 
 ## 🌟 Features
 
+---
+
 ### ⚡ Device Diagnostics
 
 * Real-time ADB & Fastboot detection
-* Device info:
+* Device information:
 
   * Model
   * Android version
@@ -80,7 +97,7 @@ Download ADB in Mac/Linux: `sudo apt install google-android-platform-tools-insta
 
 #### 📱 Stock ROM (Payload / OTA)
 
-* Extracts `payload.bin` from OTA
+* Extracts `payload.bin`
 * Converts to `.img`
 * Automatically flashes valid partitions
 
@@ -104,6 +121,8 @@ fastboot flash boot boot.img
 
 ### ⚡ Power Menu
 
+Quick reboot controls:
+
 * System → `adb reboot`
 * Recovery → `adb reboot recovery`
 * Bootloader → `adb reboot bootloader`
@@ -121,21 +140,20 @@ fastboot flash boot boot.img
 
 ### 🛡️ IMEI & Partition Tools (Root)
 
-* Backup:
+Backup and restore:
 
-  * nvram
-  * nvdata
-  * persist
-  * nvcfg
-  * protect1 / protect2
-* Restore partitions
+* nvram
+* nvdata
+* persist
+* nvcfg
+* protect1 / protect2
 
 ---
 
 ### 🧹 Maintenance
 
 * FRP removal
-* Wipe:
+* Partition wipe:
 
   * userdata
   * metadata
@@ -146,7 +164,7 @@ fastboot flash boot boot.img
 ### 🔋 Battery Analytics
 
 * ADB + Root support
-* Shows:
+* Displays:
 
   * Health %
   * Temperature
@@ -168,12 +186,12 @@ adb shell
 
 ---
 
-## 🚀 Flashing Flow
+## 🔄 Flashing Flow
 
 ### 🔥 Port ROM
 
 ```
-IMG folder → fastbootd → delete partitions → recreate → flash → reboot
+IMG folder → fastbootd → rebuild partitions → flash → reboot
 ```
 
 ---
@@ -181,37 +199,20 @@ IMG folder → fastbootd → delete partitions → recreate → flash → reboot
 ### 📱 Stock ROM
 
 ```
-ZIP → payload.bin → extract → flash imgs → reboot
+ZIP → payload.bin → extract → flash → reboot
 ```
 
 ---
 
 ## ⚠️ Disclaimer
 
-Flashing may:
+Flashing operations can:
 
 * Brick your device
 * Wipe data
 * Void warranty
 
-Use responsibly. Always keep backups.
-
----
-
-## 🖥️ Requirements
-
-* Windows 10 / 11
-* Unlocked bootloader
-* USB Debugging enabled
-* OEM USB cable
-
----
-
-## 📦 Installation
-
-1. Download latest release
-2. Extract ZIP
-3. Run `RealmeTool.exe`
+Use at your own risk. Always keep backups.
 
 ---
 
@@ -222,4 +223,3 @@ Use responsibly. Always keep backups.
 
 ---
 
----
