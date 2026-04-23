@@ -1,215 +1,201 @@
-# 🛠️ Unified Tool Pro
+# 🛠️ Unified Tool Pro v6.5
 
-A modern, high-performance Android flashing and repair toolkit for **Realme and compatible devices**, designed for speed, safety, and real-world usage.
+A modern Android flashing and repair toolkit for Realme, OnePlus, and dynamic-partition devices — built for speed, control, and real-world usage.
+
+<img width="1439" height="859" alt="Screenshot 2026-04-23 132533" src="https://github.com/user-attachments/assets/a16d1fae-4f68-41e2-8cc6-df0b9712c8e4" />
+<img width="1388" height="512" alt="Screenshot 2026-04-23 132540" src="https://github.com/user-attachments/assets/4ebdab94-d1b5-4611-a46e-30484ad3a698" />
+
 
 ---
 
 ## ⚡ Overview
 
-Unified Tool Pro simplifies complex Android operations like flashing, partition management, and diagnostics into a **clean, powerful GUI experience**.
+Unified Tool Pro simplifies low-level Android operations into a clean, powerful GUI:
 
-Whether you're flashing a ROM, fixing partitions, or debugging a device — everything is handled in one place.
+- Flash ROMs (Port / Stock / GSI)
+- Extract payloads & partitions
+- Run ADB / Fastboot commands
+- Work with OTA packages directly
+
+Everything in one place — no tool switching.
 
 ---
 
 ## 🖥️ Requirements
 
-| Requirement | Details                                |
-| ----------- | -------------------------------------- |
-| OS          | Windows 10 / 11 (64-bit), Linux, macOS |
-| USB Driver  | ADB driver installed                   |
-| Device      | USB Debugging enabled                  |
-| Bootloader  | Unlocked (for flashing)                |
+- OS: Windows 10 / 11 (64-bit)
+- Drivers: ADB / Fastboot installed
+- Device: USB Debugging enabled
+- Bootloader: Unlocked (for flashing features)
 
 ---
 
 ## 📦 Installation
 
-### 🔽 Downloads
+### Downloads
 
-| Platform   | File                         |
-| ---------- | ---------------------------- |
-| 🪟 Windows | `UnifiedToolPro-Windows.exe` |
-| 🍎 macOS   | `UnifiedToolPro-Mac.zip`     |
-| 🐧 Linux   | `UnifiedToolPro-Linux`       |
+- Windows → UnifiedToolPro.exe
 
 ---
 
-### ⚙️ Setup
+### Setup
 
-* **Windows:** Run `.exe` (no install needed)
+Windows:
+- Run the .exe (portable)
 
-* **macOS:** Unzip → Right-click → Open (first launch)
-
-* **Linux:**
-Download and rename it to "UnifiedToolPro" and then cd "directory" where tool located then run
-
-  ```bash
-  chmod +x UnifiedToolPro
-  ./UnifiedToolPro
-  ```
-
-* Install ADB (Mac/Linux):
-
-  ```bash
-  sudo apt install google-android-platform-tools-installer
-  ```
-
-> ⚠️ PyInstaller builds may trigger false antivirus flags. Add exclusion if needed.
 
 ---
 
-## 🚀 What’s New (v6.0)
+## 🚀 What’s New (v6.5)
+<img width="1439" height="844" alt="Screenshot 2026-04-23 132551" src="https://github.com/user-attachments/assets/20b60970-2dbd-401a-83e4-1a6cf7e17c9c" />
+<img width="1439" height="828" alt="Screenshot 2026-04-23 132616" src="https://github.com/user-attachments/assets/9d90c6f3-e5b2-4f4d-be0b-60df06f81156" />
+<img width="1439" height="837" alt="Screenshot 2026-04-23 132606" src="https://github.com/user-attachments/assets/d0cc24db-a42c-4411-8103-c654173fa930" />
 
-* Stable flashing engine (Port + Stock)
-* Fixed ADB/Fastboot reboot system
-* Improved payload dumper reliability
-* Cleaner UI and better interaction
-* Reduced lag, flicker, and UI glitches
+- Improved Stability
+  - New Animations and transitions
+  - Reduced crashes (threads / tasks)
+  - Better flashing reliability
+
+- UI Improvements
+  - Cleaner layout
+  - Fixed light theme visibility
+  - Better interaction flow
 
 ---
 
 ## 🌟 Features
 
----
+### Device Diagnostics
 
-### ⚡ Device Diagnostics
-
-* Real-time ADB & Fastboot detection
-* Device information:
-
-  * Model
-  * Android version
-  * Kernel
-  * Security patch
-* Bootloader status check
+- Real-time ADB / Fastboot detection
+- Device info:
+  - Model
+  - Android version
+  - Kernel
+  - Security patch
+- Bootloader status
 
 ---
 
-### 🔥 Flashing Engine
+### Flashing Engine
 
-#### 📦 Port ROM (IMG Flash)
+#### Port ROM (IMG Flash)
 
-* Flash custom `.img` files directly
-* Dynamic partition rebuild support
-* Only flashes **existing files** (safe logic)
-
----
-
-#### 📱 Stock ROM (Payload / OTA)
-
-* Extracts `payload.bin`
-* Converts to `.img`
-* Automatically flashes valid partitions
+- Flash .img files directly
+- Dynamic partition rebuild
+- Safe flashing (only existing files)
 
 ---
 
-#### 📲 ADB Sideload
+#### Stock ROM (Payload / OTA)
 
-```bash
+- Extract payload.bin
+- Convert to .img
+- Flash valid partitions automatically
+
+---
+
+#### Permanent GSI Flasher (Advanced)
+
+- Deletes and rebuilds system partitions
+- Flashes GSI as primary system
+
+⚠️ High-risk operation  
+No fallback system — use only if you understand dynamic partitions
+
+---
+
+#### ADB Sideload
+
 adb sideload rom.zip
-```
 
-
-### ⚡ Power Menu
-
-Quick reboot controls:
-
-* System → `adb reboot`
-* Recovery → `adb reboot recovery`
-* Bootloader → `adb reboot bootloader`
-* Fastboot → `fastboot reboot`
+Safest method for official updates.
 
 ---
 
-### 🧩 Payload Dumper
+### Payload Dumper
 
-* Load `payload.bin` or OTA zip
-* View partitions
-* Extract selected partitions
-
----
-
-### 🛡️ IMEI & Partition Tools (Root)
-
-Backup and restore:
-
-* nvram
-* nvdata
-* persist
-* nvcfg
-* protect1 / protect2
+- Load payload.bin or OTA ZIP
+- View partitions
+- Extract selected images
 
 ---
 
-### 🧹 Maintenance
+### Partition / IMEI Tools (Root)
 
-* FRP removal
-* Partition wipe:
+Backup & restore:
 
-  * userdata
-  * metadata
-  * frp
-
----
-
-### 🔋 Battery Analytics
-
-* ADB + Root support
-* Displays:
-
-  * Health %
-  * Temperature
-  * Cycle count
-  * Design capacity
+- nvram
+- nvdata
+- persist
+- nvcfg
+- protect1 / protect2
 
 ---
 
-### 💻 CMD Studio
+### Maintenance
 
-Run commands directly:
+- FRP removal
+- Partition wipe:
+  - userdata
+  - metadata
+  - frp
 
-```bash
-adb devices
-fastboot devices
-adb logcat
-adb shell
-```
+---
+
+### Battery Analytics
+
+- Health %
+- Temperature
+- Cycle count
+- Design capacity
+
+---
+
+### CMD Studio
+
+adb devices  
+fastboot devices  
+adb shell  
+adb logcat  
 
 ---
 
 ## 🔄 Flashing Flow
 
-### 🔥 Port ROM
+Port ROM:
+IMG → fastbootd → rebuild → flash → reboot
 
-```
-IMG folder → fastbootd → rebuild partitions → flash → reboot
-```
-
----
-
-### 📱 Stock ROM
-
-```
+Stock ROM:
 ZIP → payload.bin → extract → flash → reboot
-```
+
+OTA Link:
+Paste link → detect → extract / download → flash
+
+GSI:
+fastbootd → delete partitions → recreate → flash system
 
 ---
 
 ## ⚠️ Disclaimer
 
-Flashing operations can:
+This tool performs low-level operations.
 
-* Brick your device
-* Wipe data
-* Void warranty
+You can:
+- Brick your device
+- Lose data
+- Break partitions
 
-Use at your own risk. Always keep backups.
+Always:
+- Backup first
+- Verify files
+- Use correct images
 
 ---
 
-* Developer: Ayan (@imnotaino)
-* GitHub: sairb1
+## 👤 Developer
+
+Ayan (@imnotaino)  
+GitHub: sairb1
 
 ---
-
